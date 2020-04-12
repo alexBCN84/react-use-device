@@ -11,7 +11,9 @@ npm install --save react-use-device
 ```
 
 ## Usage
-> useDevice is a hook that returns an object with breakpoints for four devives.
+
+> useDevice is a hook that returns an object with breakpoints for four devices.
+
 ```jsx
 {
     isMOBILE: device === isMOBILE,   // app to winndw.innerWidth of 768px
@@ -21,15 +23,15 @@ npm install --save react-use-device
 };
 ```
 
-## Example 
+## Example
 
 ```jsx
-import React from 'react'
+import React from "react";
 
-import { useDevice } from 'react-use-device'
+import { useDevice } from "react-use-device";
 
 const MyComponent = () => {
-  const { isMOBILE, isTABLET, isLAPTOP, isDESKTOP } = useDevice(); 
+  const { isMOBILE, isTABLET, isLAPTOP, isDESKTOP } = useDevice();
 
   return (
     <section>
@@ -38,10 +40,10 @@ const MyComponent = () => {
       {isLAPTOP && <h1>I am a laptop screen</h1>}
       {isDESKTOP && <h1>I am a desktop screen</h1>}
     </section>
-    );
-}
+  );
+};
 
-export default MyComponent
+export default MyComponent;
 ```
 
 ## License
