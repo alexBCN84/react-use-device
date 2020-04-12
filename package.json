@@ -1,7 +1,7 @@
 {
   "name": "react-use-device",
-  "version": "1.0.2",
-  "description": "A custom react hook to render content responsively based on device breakpoints. The contents also updates on screen resize.",
+  "version": "1.0.3",
+  "description": "An npm package for react 16. useDevice is a custom hook that can be used to load different content on different viewports. The content also updates on screen resize.",
   "author": "Alejandro Gines <alejandro.ginesmartinez@gmail.com>",
   "license": "MIT",
   "repository": "alexBCN84/react-use-device",
