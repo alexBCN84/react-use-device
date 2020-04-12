@@ -2,7 +2,7 @@
   "name": "react-use-device",
   "version": "1.0.1",
   "description": "A custom react hook to render content responsively based on device breakpoints. The contents also updates on screen resize.",
-  "author": "alexBCN84",
+  "author": "Alejandro Gines <alejandro.ginesmartinez@gmail.com>",
   "license": "MIT",
   "repository": "alexBCN84/react-use-device",
   "main": "dist/index.js",
