@@ -6,29 +6,32 @@ export const sizes = {
   desktop: 1170
 };
 
-export function useDevice() {
+export function useDevice(breakpoints = sizes) {
+  if (typeof window === "undefined") {
+    return {};
+  }
   const isMOBILE = "isMOBILE";
   const isTABLET = "isTABLET";
   const isLAPTOP = "isLAPTOP";
   const isDESKTOP = "isDESKTOP";
 
   const onLoadDevice = () => {
-    return window.innerWidth < sizes.tablet
+    return window.innerWidth < breakpoints.tablet
       ? isMOBILE
-      : window.innerWidth < sizes.laptop
+      : window.innerWidth < breakpoints.laptop
       ? isTABLET
-      : window.innerWidth < sizes.desktop
+      : window.innerWidth < breakpoints.desktop
       ? isLAPTOP
       : isDESKTOP;
   };
 
   const [device, setDevice] = useState(onLoadDevice());
   const onResizeDevice = () => {
-    return window.innerWidth < sizes.tablet
+    return window.innerWidth < breakpoints.tablet
       ? setDevice(isMOBILE)
-      : window.innerWidth < sizes.laptop
+      : window.innerWidth < breakpoints.laptop
       ? setDevice(isTABLET)
-      : window.innerWidth < sizes.desktop
+      : window.innerWidth < breakpoints.desktop
       ? setDevice(isLAPTOP)
       : setDevice(isDESKTOP);
   };
