@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useDevice } from 'react-use-device'
-import 'react-use-device/dist/index.css'
+import './index.css'
 
 const App = () => {
   const { isMOBILE, isTABLET, isLAPTOP, isDESKTOP } = useDevice(); 
