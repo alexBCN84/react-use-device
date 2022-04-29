@@ -59,6 +59,7 @@
     "dist"
   ],
   "dependencies": {
-    "react-scripts": "4.0.3"
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.6.4"
   }
 }
