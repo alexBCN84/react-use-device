@@ -1,6 +1,6 @@
 {
   "name": "react-use-device",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "An npm package for react 16. useDevice is a custom hook that can be used to load different content on different viewports. The content also updates on screen resize. It works well also on SSR applications like does built with NextJS",
   "author": "Alejandro Gines <alejandro.ginesmartinez@gmail.com>",
   "license": "MIT",
